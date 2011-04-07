@@ -1,0 +1,11 @@
+en:
+  rationalize:
+    layout:
+      title: Rationalize
+    views:
+      translations:
+        form:
+          locale: Locale
+          key: Key
+          value: Value
+          submit: Save

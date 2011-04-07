@@ -1,0 +1,20 @@
+%h1 Translations
+
+%dl#translations
+  - @translations.keys.each do |key|
+    %dt= key
+    %dd= @translations[key]
+    
+= form_tag rationalize_translations_path do
+  %p
+    = label_tag :locale, t('rationalize.views.translations.form.locale')
+    = text_field_tag :locale
+  %p
+    = label_tag :key, t('rationalize.views.translations.form.key')
+    = text_field_tag :key
+  %p
+    = label_tag :value, t('rationalize.views.translations.form.value')
+    = text_field_tag :value
+  %p
+    = submit_tag t('rationalize.views.translations.form.submit')
+    
